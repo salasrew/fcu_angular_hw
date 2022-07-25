@@ -1,0 +1,18 @@
+<div>
+    <!-- <label for="temper" > 溫度 </label> -->
+    <input type="number"  [(ngModel)]="inputTemp">
+
+<select  [(ngModel)]="selectedmethod" >
+    <option value='1'>攝氏轉華視 </option>
+    <option value="2">華式轉攝氏</option> 
+</select>
+<!-- <input type="button" id="btn_cnvt" value="開始轉換" (click)="onCalculate()"> -->
+
+<!-- <div> {{result}}   </div> -->
+<app-result [input]="inputTemp" [method]="selectedmethod" ></app-result>
+
+</div>
+
+
+
+

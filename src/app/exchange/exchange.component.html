@@ -1,0 +1,18 @@
+<div>
+    <!-- <label for="temper" > 溫度 </label> -->
+    <input type="number"  [(ngModel)]="inputCash">
+
+<select  [(ngModel)]="selectedmethod" >
+    <option value='3'>台幣轉美金 </option>
+    <option value="4">美金轉台幣</option> 
+</select>
+<!-- <input type="button" id="btn_cnvt" value="開始轉換" (click)="onCalculate()"> -->
+
+<!-- <div> {{result}}   </div> -->
+<app-result [input]="inputCash" [method]="selectedmethod" ></app-result>
+
+</div>
+
+
+
+
